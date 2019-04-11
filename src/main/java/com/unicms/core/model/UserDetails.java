@@ -2,6 +2,7 @@ package com.unicms.core.model;
 
 import lombok.*;
 
+import javax.persistence.OneToOne;
 import java.sql.Date;
 
 
@@ -21,5 +22,8 @@ public class UserDetails {
     private String postalCode;
     private String city;
     private String country;
+
+    @OneToOne(mappedBy = "user_details")
+    private User user;
 
 }

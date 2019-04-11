@@ -93,8 +93,8 @@
     <orderEntry type="library" scope="RUNTIME" name="Gradle: com.google.protobuf:protobuf-java:3.6.1" level="project" />
     <orderEntry type="library" name="Gradle: org.hdrhistogram:HdrHistogram:2.1.9" level="project" />
     <orderEntry type="library" name="Gradle: org.latencyutils:LatencyUtils:2.0.3" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.yaml:snakeyaml:1.24" level="project" />
     <orderEntry type="library" name="Gradle: javax.batch:javax.batch-api:1.0" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.yaml:snakeyaml:1.24" level="project" />
     <orderEntry type="library" name="Gradle: org.codehaus.jettison:jettison:1.2" level="project" />
     <orderEntry type="library" name="Gradle: org.aspectj:aspectjweaver:1.9.2" level="project" />
     <orderEntry type="library" name="Gradle: org.hibernate.common:hibernate-commons-annotations:5.1.0.Final" level="project" />

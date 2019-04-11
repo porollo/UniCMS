@@ -1,6 +1,15 @@
 package com.unicms.core.repository;
 
-import org.springframework.data.jpa.repository.JpaRepository;
+import com.unicms.core.model.UserDetails;
+import org.springframework.data.repository.PagingAndSortingRepository;
+import org.springframework.data.repository.query.Param;
+import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 
-public interface UserDetailsRepository extends JpaRepository<UserDetailsRepository, Integer> {
+import java.util.List;
+
+@RepositoryRestResource(collectionResourceRel = "user_details", path = "user_details")
+public interface UserDetailsRepository extends PagingAndSortingRepository<UserDetails, Long> {
+
+    List<UserDetails> findByLastName(@Param("name") String name);
+
 }
