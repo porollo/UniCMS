@@ -2,25 +2,28 @@ package com.unicms.core.model;
 
 import lombok.*;
 
-import javax.persistence.CascadeType;
-import javax.persistence.Entity;
-import javax.persistence.JoinColumn;
-import javax.persistence.OneToOne;
+import javax.persistence.*;
 import java.sql.Timestamp;
 
 @Data
 @Entity
+@Table(name = "users")
 
 public class User {
 
-    private int id;
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "id")
+    private Long id;
     private String username;
     private String password;
     private String email;
     private boolean enable;
     private Timestamp recordCreated;
 
-    public User(int id, String username, String password, String email, boolean enable, Timestamp recordCreated, UserDetails userDetails) {
+    private User() {}
+
+    public User(Long id, String username, String password, String email, boolean enable, Timestamp recordCreated, UserDetails userDetails) {
         this.id = id;
         this.username = username;
         this.password = password;
@@ -30,8 +33,6 @@ public class User {
         this.userDetails = userDetails;
     }
 
-    @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "user_details_id", referencedColumnName = "id")
+    @OneToOne(mappedBy = "user", cascade = CascadeType.ALL)
     private UserDetails userDetails;
-
 }

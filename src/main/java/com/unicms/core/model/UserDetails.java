@@ -1,16 +1,18 @@
 package com.unicms.core.model;
 
 import lombok.*;
-import javax.persistence.Entity;
-import javax.persistence.OneToOne;
+
+import javax.persistence.*;
 import java.sql.Date;
 
 @Data
 @Entity
+@Table(name = "user_details")
 
 public class UserDetails {
 
-    private int id;
+    private @Id
+    @GeneratedValue Long id;
     private String firstName;
     private String lastName;
     private String phone;
@@ -20,8 +22,9 @@ public class UserDetails {
     private String city;
     private String country;
 
+    private UserDetails() {}
 
-    public UserDetails(int id, String firstName, String lastName, String phone, Date birthday, String address, String postalCode, String city, String country, User user) {
+    public UserDetails(Long id, String firstName, String lastName, String phone, Date birthday, String address, String postalCode, String city, String country, User user) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -34,7 +37,8 @@ public class UserDetails {
         this.user = user;
     }
 
-    @OneToOne(mappedBy = "user_details")
+    @OneToOne
+    @MapsId
     private User user;
 
 }
