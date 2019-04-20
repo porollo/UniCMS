@@ -11,7 +11,7 @@ import org.springframework.web.servlet.ModelAndView;
 public class InstallController {
 
     @GetMapping
-    public ModelAndView getInstallData() {
+    public ModelAndView installData() {
 
         ModelAndView mv = new ModelAndView();
         mv.setViewName("install");
