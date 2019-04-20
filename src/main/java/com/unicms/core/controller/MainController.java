@@ -1,16 +1,22 @@
 package com.unicms.core.controller;
 
-import com.unicms.core.util.install.BaseInstall;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
+
+@Controller
+@RequestMapping (value = "/")
 
 public class MainController {
 
+    @GetMapping
+    public ModelAndView getInstallData() {
 
-    public boolean checkInstall(){
-        if BaseInstall == true {
-            return MainController();/////////
-        }
-        else {
-            return InstallController(); ////
-        }
+        ModelAndView mv = new ModelAndView();
+        mv.setViewName("main");
+        return mv;
+
     }
 }
+
