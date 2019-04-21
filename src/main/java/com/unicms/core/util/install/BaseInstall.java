@@ -6,7 +6,11 @@ import java.nio.file.Paths;
 
 public class BaseInstall {
 
-    private String filePath = "/";
+
+    private static final String INSTALL_LOCK_FILE = "/unicms.lock";
+
+
+    private String filePath = INSTALL_LOCK_FILE;
 
     private void CreateLockSetupFile() {
 

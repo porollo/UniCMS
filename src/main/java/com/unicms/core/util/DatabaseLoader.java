@@ -9,15 +9,15 @@ import org.springframework.stereotype.Component;
 @Component
 public class DatabaseLoader implements CommandLineRunner {
 
-    private final InfoRepository repository;
+    private InfoRepository infoRepository;
 
     @Autowired
-    public DatabaseLoader(InfoRepository repository) {
-        this.repository = repository;
+    public DatabaseLoader(InfoRepository infoRepository) {
+        this.infoRepository = infoRepository ;
     }
 
     @Override
     public void run(String... strings) throws Exception {
-        this.repository.save(new Info("UniCMS", "1.0.0"));
+        this.infoRepository.save(new Info("UniCMS", "1.0.0"));
     }
 }
