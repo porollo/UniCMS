@@ -13,6 +13,5 @@ public class IndexController {
             model.addAttribute("name", name);
             return "main";
         }
-
     }
 

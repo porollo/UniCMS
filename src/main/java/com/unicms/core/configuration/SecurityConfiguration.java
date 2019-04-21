@@ -1,4 +1,3 @@
-/*
 package com.unicms.core.configuration;
 
 import org.springframework.context.annotation.Bean;
@@ -15,7 +14,7 @@ public class SecurityConfiguration implements WebMvcConfigurer {
     protected void configure(HttpSecurity http) throws Exception {
         http
                 .authorizeRequests()
-                .antMatchers("/resources/**", "/signup", "/").permitAll()
+                .antMatchers("/resources/**", "/api/**", "/").permitAll()
                 .antMatchers("/admin/**").hasRole("ADMIN")
                 .antMatchers("/db/**").access("hasRole('ADMIN') and hasRole('DBA')")
                 .anyRequest().authenticated()
@@ -34,4 +33,3 @@ public class SecurityConfiguration implements WebMvcConfigurer {
 }
 
 
-*/
