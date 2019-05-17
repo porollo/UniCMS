@@ -18,6 +18,8 @@ public class User {
     private Long id;
     private String email;
     private String username;
+    private String name;
+    private String lastname;
     private String password;
     private boolean enable;
     private Timestamp recordCreated;
