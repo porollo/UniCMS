@@ -1,9 +1,10 @@
 package com.unicms.core.model;
 
-import lombok.*;
+import lombok.Data;
 
 import javax.persistence.*;
 import java.sql.Timestamp;
+import java.util.Set;
 
 @Data
 @Entity
@@ -13,26 +14,21 @@ public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "id")
+    @Column(name = "user_id")
     private Long id;
+    private String email;
     private String username;
     private String password;
-    private String email;
     private boolean enable;
     private Timestamp recordCreated;
 
-    private User() {}
-
-    public User(Long id, String username, String password, String email, boolean enable, Timestamp recordCreated, UserDetails userDetails) {
-        this.id = id;
-        this.username = username;
-        this.password = password;
-        this.email = email;
-        this.enable = enable;
-        this.recordCreated = recordCreated;
-        this.userDetails = userDetails;
-    }
 
     @OneToOne(mappedBy = "user", cascade = CascadeType.ALL)
     private UserDetails userDetails;
+
+    @ManyToMany(cascade = CascadeType.ALL)
+    @JoinTable(name = "roles", joinColumns = @JoinColumn(name = "user_id"), inverseJoinColumns = @JoinColumn(name = "role_id"))
+    private Set<Role> roles;
+
+
 }

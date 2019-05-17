@@ -9,19 +9,24 @@ import javax.persistence.Table;
 
 @Data
 @Entity
-@Table(name = "infos")
+@Table(name = "settings")
 
-public class Info {
+public class Settings {
 
     private @Id
-    @GeneratedValue Long id;
+    @GeneratedValue
+    Long id;
     private String applicationName;
     private String applicationVersion;
+    private String dbName;
+    private String viewEngine;
 
-    private Info() {}
+    private Settings() {}
 
-    public Info(String applicationName, String applicationVersion) {
+    public Settings(String applicationName, String applicationVersion, String dbName, String viewEngine) {
         this.applicationName = applicationName;
         this.applicationVersion = applicationVersion;
+        this.dbName = dbName;
+        this.viewEngine = viewEngine;
     }
 }
