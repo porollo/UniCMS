@@ -1,6 +1,6 @@
 package com.unicms.core.model;
 
-import lombok.*;
+import lombok.Data;
 
 import javax.persistence.*;
 import java.sql.Date;
