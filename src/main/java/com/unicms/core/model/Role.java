@@ -14,4 +14,13 @@ public class Role {
     private int id;
     @Column(name = "role")
     private String role;
+
+    private Role(){}
+
+    public Role(String role){
+        this.role = role;
+    }
+
+
+
 }

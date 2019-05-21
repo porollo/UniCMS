@@ -17,7 +17,7 @@ public class SettingsRESTController {
     }
 
     @GetMapping("/settings")
-    public List<Settings> getUsers() {
+    public List<Settings> getSettings() {
         return (List<Settings>) settingsRepository.findAll();
     }
 

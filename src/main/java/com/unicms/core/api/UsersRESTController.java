@@ -2,7 +2,6 @@ package com.unicms.core.api;
 
 import com.unicms.core.model.User;
 import com.unicms.core.repository.UserRepository;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -13,7 +12,7 @@ public class UsersRESTController {
 
     private final UserRepository userRepository;
 
-    public UsersRESTController(@Qualifier("userRepository") UserRepository userRepository) {
+    public UsersRESTController(UserRepository userRepository) {
         this.userRepository = userRepository;
     }
     
