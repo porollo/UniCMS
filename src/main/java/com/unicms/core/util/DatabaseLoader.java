@@ -18,7 +18,7 @@ public class DatabaseLoader implements CommandLineRunner {
     private RoleRepository roleRepository;
 
     @Autowired
-    public DatabaseLoader(SettingsRepository settingsRepository, UserRepository userRepository, RoleRepository roleRepository ) {
+    public DatabaseLoader(SettingsRepository settingsRepository, UserRepository userRepository, RoleRepository roleRepository) {
         this.settingsRepository = settingsRepository;
         this.userRepository = userRepository;
         this.roleRepository = roleRepository;
