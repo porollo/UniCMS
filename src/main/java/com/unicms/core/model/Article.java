@@ -18,11 +18,13 @@ public class Article {
     Long id;
     private String articleTitle;
     private String articleContent;
+    private String articleOwner;
 
     private Article() {}
 
-    public Article(String articleTitle, String articleContent) {
+    public Article(String articleTitle, String articleContent, String articleOwner) {
         this.articleTitle = articleTitle;
         this.articleContent = articleContent;
+        this.articleOwner = articleOwner;
     }
 }
