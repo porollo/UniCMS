@@ -19,18 +19,18 @@ public class User {
     private String email;
     private String username;
     private String name;
-    private String lastname;
+    private String surname;
     private String password;
     private boolean enable;
     private String recordCreated;
 
     private User() {};
 
-    public User (String email, String username, String name, String lastname, String password, boolean enable, String recordCreated) {
+    public User (String email, String username, String name, String surname, String password, boolean enable, String recordCreated) {
         this.email = email;
         this.username = username;
         this.name =  name;
-        this.lastname = lastname;
+        this.surname = surname;
         this.password = password;
         this.enable = enable;
         this.recordCreated = recordCreated;
