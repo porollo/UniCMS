@@ -5,6 +5,12 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
 export class AppComponent {
-  title = 'unicms-angularclient';
+
+  title: string;
+
+  constructor() {
+    this.title = 'UniCMS Angular Client';
+  }
 }

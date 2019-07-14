@@ -3,8 +3,6 @@ package com.unicms.core.model;
 import lombok.Data;
 
 import javax.persistence.*;
-import java.util.Collection;
-import java.util.LinkedHashSet;
 import java.util.Set;
 
 @Data
@@ -18,19 +16,15 @@ public class User {
     Long user_id;
     private String email;
     private String username;
-    private String name;
-    private String surname;
     private String password;
     private boolean enable;
     private String recordCreated;
 
     private User() {};
 
-    public User (String email, String username, String name, String surname, String password, boolean enable, String recordCreated) {
+    public User (String email, String username, String password, boolean enable, String recordCreated) {
         this.email = email;
         this.username = username;
-        this.name =  name;
-        this.surname = surname;
         this.password = password;
         this.enable = enable;
         this.recordCreated = recordCreated;
@@ -41,8 +35,5 @@ public class User {
 
     @ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     @JoinTable(name = "roles", joinColumns = @JoinColumn(name = "user_id"), inverseJoinColumns = @JoinColumn(name = "role_id"))
-    private Set<Role> roles;
-
-
-
+    private Set<Roles> roles;
 }

@@ -14,6 +14,8 @@ public class UserDetails {
     private @Id
     @GeneratedValue Long id;
 
+    private String name;
+    private String surname;
     private String phone;
     private Date   birthday;
     private String address;
