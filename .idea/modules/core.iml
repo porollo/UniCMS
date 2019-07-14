@@ -24,6 +24,8 @@
       <excludeFolder url="file://$MODULE_DIR$/../../target" />
       <excludeFolder url="file://$MODULE_DIR$/../../unicms-angular-client/dist" />
       <excludeFolder url="file://$MODULE_DIR$/../../unicms-angular-client/tmp" />
+      <excludeFolder url="file://$MODULE_DIR$/../../unicms-angularclient/dist" />
+      <excludeFolder url="file://$MODULE_DIR$/../../unicms-angularclient/tmp" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
