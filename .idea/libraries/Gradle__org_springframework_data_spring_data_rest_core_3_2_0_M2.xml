@@ -2,8 +2,11 @@
   <library name="Gradle: org.springframework.data:spring-data-rest-core:3.2.0.M2">
     <CLASSES>
       <root url="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-rest-core/3.2.0.M2/spring-data-rest-core-3.2.0.M2.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-rest-core/3.2.0.M2/af65feb7d939bdb71d6b7842c53d3ec691417708/spring-data-rest-core-3.2.0.M2.jar!/" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-rest-core/3.2.0.M2/ccbafb552aca0bcf86cb15541d3354a1223a0541/spring-data-rest-core-3.2.0.M2-sources.jar!/" />
+    </SOURCES>
   </library>
 </component>

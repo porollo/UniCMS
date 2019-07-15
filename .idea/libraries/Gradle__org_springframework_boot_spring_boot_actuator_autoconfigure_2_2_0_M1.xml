@@ -2,8 +2,11 @@
   <library name="Gradle: org.springframework.boot:spring-boot-actuator-autoconfigure:2.2.0.M1">
     <CLASSES>
       <root url="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-actuator-autoconfigure/2.2.0.M1/spring-boot-actuator-autoconfigure-2.2.0.M1.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-actuator-autoconfigure/2.2.0.M1/5bfdd83c174e4497827aa6b300d2a386c3153ac5/spring-boot-actuator-autoconfigure-2.2.0.M1.jar!/" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-actuator-autoconfigure/2.2.0.M1/ed6ffbe064627a5e03d61d65e1ff24d51d67cd74/spring-boot-actuator-autoconfigure-2.2.0.M1-sources.jar!/" />
+    </SOURCES>
   </library>
 </component>

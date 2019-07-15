@@ -2,6 +2,7 @@
   <library name="Gradle: org.springframework.boot:spring-boot-starter-actuator:2.2.0.M1">
     <CLASSES>
       <root url="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-actuator/2.2.0.M1/spring-boot-starter-actuator-2.2.0.M1.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-actuator/2.2.0.M1/449c09987b72cf449747b3f20b595e37693b671a/spring-boot-starter-actuator-2.2.0.M1.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

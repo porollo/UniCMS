@@ -2,8 +2,11 @@
   <library name="Gradle: org.springframework.hateoas:spring-hateoas:1.0.0.M1">
     <CLASSES>
       <root url="jar://$MAVEN_REPOSITORY$/org/springframework/hateoas/spring-hateoas/1.0.0.M1/spring-hateoas-1.0.0.M1.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.hateoas/spring-hateoas/1.0.0.M1/374cebd2d0c2f6e339678199a6a99e978abb473e/spring-hateoas-1.0.0.M1.jar!/" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.hateoas/spring-hateoas/1.0.0.M1/76704079ab6f591b07919cee9d2d50e173528901/spring-hateoas-1.0.0.M1-sources.jar!/" />
+    </SOURCES>
   </library>
 </component>

@@ -2,8 +2,11 @@
   <library name="Gradle: org.springframework.data:spring-data-jpa:2.2.0.M2">
     <CLASSES>
       <root url="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-jpa/2.2.0.M2/spring-data-jpa-2.2.0.M2.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-jpa/2.2.0.M2/19f314499c01f5e4f19ca493cbae4c1761aa62b2/spring-data-jpa-2.2.0.M2.jar!/" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-jpa/2.2.0.M2/c60ee07d22f0b7598fb7a19d4d8ec15ce9567cac/spring-data-jpa-2.2.0.M2-sources.jar!/" />
+    </SOURCES>
   </library>
 </component>

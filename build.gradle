@@ -47,7 +47,7 @@ dependencies {
 }
 
 group = 'com.unicms'
-version = '0.0.1-SNAPSHOT'
+version = '0.1.0-SNAPSHOT'
 description = 'UniCMS-Core'
 sourceCompatibility = '1.8'
 

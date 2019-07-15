@@ -28,11 +28,14 @@ public class DatabaseLoader implements CommandLineRunner {
     @Override
     public void run(String... strings) throws Exception {
 
+        this.settingsRepository.deleteAll();
         this.settingsRepository.save(new Settings("UniCMS", "0.0.1", "SQL Server 2018", "ReactJS"));
 
+        this.userRepository.deleteAll();
         this.userRepository.save(new User("d.porollo@gmail.com", "spider", "12345678", true, "30.05.1985"));
         this.userRepository.save(new User("a.sidorov@gmail.com", "viper", "12345678", true, "10.10.1982"));
 
+        this.rolesRepository.deleteAll();
         this.rolesRepository.save(new Roles("ADMIN"));
     }
 }

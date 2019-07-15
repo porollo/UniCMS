@@ -2,6 +2,7 @@
   <library name="Gradle: org.springframework.boot:spring-boot-starter-data-rest:2.2.0.M1">
     <CLASSES>
       <root url="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-data-rest/2.2.0.M1/spring-boot-starter-data-rest-2.2.0.M1.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-data-rest/2.2.0.M1/f3ac08c00954c110bc1f614a3e502b5666541270/spring-boot-starter-data-rest-2.2.0.M1.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

@@ -2,8 +2,11 @@
   <library name="Gradle: org.springframework.data:spring-data-rest-hal-browser:3.2.0.M2">
     <CLASSES>
       <root url="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-rest-hal-browser/3.2.0.M2/spring-data-rest-hal-browser-3.2.0.M2.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-rest-hal-browser/3.2.0.M2/a0e4ebbb6c03315ff20cb920c205d915c6da4709/spring-data-rest-hal-browser-3.2.0.M2.jar!/" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-rest-hal-browser/3.2.0.M2/8ed7b18d2bcc13f51fd02e522a30b169799a15bf/spring-data-rest-hal-browser-3.2.0.M2-sources.jar!/" />
+    </SOURCES>
   </library>
 </component>

@@ -8,6 +8,7 @@ import java.util.List;
 
 @RestController
 @CrossOrigin(origins = "http://localhost:4200")
+
 public class UsersRESTController {
 
     private final UserRepository userRepository;
@@ -25,4 +26,7 @@ public class UsersRESTController {
     void addUser(@RequestBody User user) {
         userRepository.save(user);
     }
+
+    @PostMapping("/users")
+    void deleteUser(@RequestBody User user) {userRepository.delete(user);};
 }
