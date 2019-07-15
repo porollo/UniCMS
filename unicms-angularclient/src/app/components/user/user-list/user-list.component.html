@@ -5,6 +5,7 @@
       <tr>
         <th scope="col">Username</th>
         <th scope="col">Email</th>
+        <th scope="col">Role</th>
         <th scope="col">Actions</th>
       </tr>
       </thead>
@@ -12,10 +13,12 @@
       <tr *ngFor="let user of users">
         <td>{{ user.username }}</td>
         <td><a href="mailto:{{ user.email }}">{{ user.email }}</a></td>
-        <td>Edit, Delete</td>
+        <td>ADMIN</td>
+        <td><a routerLink="/edituser" class="btn btn-secondary">Edit</a>&nbsp;<a routerLink="/deleteuser" class="btn btn-danger">Delete</a></td>
       </tr>
       </tbody>
     </table>
+    <a routerLink="/adduser" class="btn btn-info">Add User</a>
   </div>
 </div>
 

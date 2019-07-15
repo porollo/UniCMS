@@ -16,6 +16,9 @@
         <div [hidden]="!email.pristine" class="alert alert-danger">Email is required</div>
       </div>
       <button type="submit" [disabled]="!userForm.form.valid" class="btn btn-info">Submit</button>
+      &nbsp;
+      <a routerLink="/users" class="btn btn-info">List Users</a>
+
     </form>
   </div>
 </div>
