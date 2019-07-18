@@ -13,6 +13,7 @@ import { IndexComponent } from './components/index/index.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { SettingsListComponent } from './components/settings/settings-list/settings-list.component';
 import { SettingsFormComponent } from './components/settings/settings-form/settings-form.component';
+import {SettingsService} from "./services/settings/settings-service.service";
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { SettingsFormComponent } from './components/settings/settings-form/setti
     FormsModule
   ],
   providers: [UserService],
+  providers: [SettingsService],
   bootstrap: [AppComponent]
 })
 
