@@ -1,4 +1,4 @@
-package com.unicms.core.util;
+package com.unicms.core.util.database;
 
 import com.unicms.core.model.Roles;
 import com.unicms.core.model.Settings;

@@ -11,6 +11,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { IndexComponent } from './components/index/index.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
+import { SettingsListComponent } from './components/settings/settings-list/settings-list.component';
+import { SettingsFormComponent } from './components/settings/settings-form/settings-form.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
     NavbarComponent,
     FooterComponent,
     IndexComponent,
-    SidebarComponent
+    SidebarComponent,
+    SettingsListComponent,
+    SettingsFormComponent
   ],
   imports: [
     BrowserModule,
