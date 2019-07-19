@@ -1,11 +1,7 @@
 package com.unicms.core.util.database;
 
-import com.unicms.core.model.Roles;
-import com.unicms.core.model.Settings;
-import com.unicms.core.model.User;
-import com.unicms.core.repository.RolesRepository;
-import com.unicms.core.repository.SettingsRepository;
-import com.unicms.core.repository.UserRepository;
+import com.unicms.core.model.*;
+import com.unicms.core.repository.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.CommandLineRunner;
@@ -17,12 +13,16 @@ public class DatabaseLoader implements CommandLineRunner {
     private SettingsRepository settingsRepository;
     private UserRepository userRepository;
     private RolesRepository rolesRepository;
+    private ArticleRepository articleRepository;
+    private CommentRepository commentRepository;
 
     @Autowired
-    public DatabaseLoader(SettingsRepository settingsRepository, UserRepository userRepository, RolesRepository rolesRepository) {
+    public DatabaseLoader(SettingsRepository settingsRepository, UserRepository userRepository, RolesRepository rolesRepository, ArticleRepository articleRepository, CommentRepository commentRepository) {
         this.settingsRepository = settingsRepository;
         this.userRepository = userRepository;
         this.rolesRepository = rolesRepository;
+        this.articleRepository = articleRepository;
+        this.commentRepository = commentRepository;
     }
 
     @Override
@@ -37,5 +37,12 @@ public class DatabaseLoader implements CommandLineRunner {
 
         this.rolesRepository.deleteAll();
         this.rolesRepository.save(new Roles("ADMIN"));
+
+        this.articleRepository.deleteAll();
+        this.articleRepository.save(new Article("Hello", "Test content", "d.porollo@gmail.com")); // Users !!!
+
+        this.commentRepository.deleteAll();
+        this.commentRepository.save(new Comment("Comment title", "Comment Content", "d.pporollo@gmail.com"));
+
     }
 }
