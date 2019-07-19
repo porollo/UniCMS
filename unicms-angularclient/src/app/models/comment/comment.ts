@@ -1,8 +1,6 @@
 export class Comment {
-  id: string;
+  id: number;
   commentTitle: string;
   commentContent: string;
   commentOwner: string;
-  enable: boolean;
 }
-

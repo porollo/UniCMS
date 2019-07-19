@@ -13,7 +13,7 @@
       <tr *ngFor="let user of users">
         <td>{{ user.username }}</td>
         <td><a href="mailto:{{ user.email }}">{{ user.email }}</a></td>
-        <td>ADMIN</td>
+        <td><a routerLink="/changeroleuser" class="btn btn-secondary">User</a>&nbsp;<a routerLink="/changeroleadmin" class="btn btn-secondary">Admin</a>&nbsp;<a routerLink="/changeroledba" class="btn btn-secondary">DBA</a></td>
         <td><a routerLink="/edituser" class="btn btn-secondary">Edit</a>&nbsp;<a routerLink="/deleteuser" class="btn btn-danger">Delete</a></td>
       </tr>
       </tbody>

@@ -1,7 +1,7 @@
 export class Article {
-  id: string;
+  id: number;
   articleTitle: string;
   articleContent: string;
-  articleOwner: boolean;
+  articleOwner: string;
 }
 
