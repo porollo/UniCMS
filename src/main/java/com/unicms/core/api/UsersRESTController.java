@@ -26,5 +26,5 @@ public class UsersRESTController {
     void addUser(@RequestBody User user) {
         userRepository.save(user);
     }
-    void deleteUser(@RequestBody User user) {userRepository.delete(user);};
+    void deleteUser(@RequestBody User user) {userRepository.delete(user);}
 }
