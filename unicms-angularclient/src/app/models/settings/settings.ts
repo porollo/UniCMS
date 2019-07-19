@@ -1,5 +1,5 @@
 export class Settings {
-  id: string;
+  id: number;
   applicationName: string;
   applicationVersion: string;
   dbName: string;

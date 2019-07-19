@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import {Settings} from "../../models/settings/settings";
-import {Observable} from "rxjs-observable";
+import {Observable} from "rxjs";
 
 @Injectable()
 export class SettingsService {

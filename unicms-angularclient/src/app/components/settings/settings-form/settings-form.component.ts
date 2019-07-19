@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Settings} from "../../../models/settings/settings";
 import {ActivatedRoute, Router} from "@angular/router";
-import {SettingsService} from "../../../services/settings/settings-service.service";
+import {SettingsService} from "../../../services/settings/settings.service";
 
 @Component({
   selector: 'app-settings-form',
@@ -11,9 +11,9 @@ import {SettingsService} from "../../../services/settings/settings-service.servi
 
 export class SettingsFormComponent {
 
-  user: Settings;
+  settings: Settings;
 
-  constructor(private route: ActivatedRoute, private router: Router, private userService: SettingsService) {
+  constructor(private route: ActivatedRoute, private router: Router, private settingsService: SettingsService) {
     this.settings = new Settings();
   }
 
@@ -25,3 +25,4 @@ export class SettingsFormComponent {
     this.router.navigate(['/settings']);
   }
 }
+

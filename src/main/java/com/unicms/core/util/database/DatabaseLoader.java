@@ -29,7 +29,7 @@ public class DatabaseLoader implements CommandLineRunner {
     public void run(String... strings) throws Exception {
 
         this.settingsRepository.deleteAll();
-        this.settingsRepository.save(new Settings("UniCMS", "0.0.1", "SQL Server 2018", "ReactJS"));
+        this.settingsRepository.save(new Settings("UniCMS", "0.0.1", "SQL Server 2018", "Angular"));
 
         this.userRepository.deleteAll();
         this.userRepository.save(new User("d.porollo@gmail.com", "spider", "12345678", true, "30.05.1985"));

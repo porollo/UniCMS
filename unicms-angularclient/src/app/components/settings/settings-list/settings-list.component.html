@@ -3,14 +3,14 @@
     <table class="table table-bordered table-striped">
       <thead class="thead-dark">
       <tr>
-        <th scope="col">#</th>
-        <th scope="col">Name</th>
+        <th scope="col">ID</th>
+        <th scope="col">Application Name</th>
       </tr>
       </thead>
       <tbody>
       <tr *ngFor="let setting of settings">
         <td>{{ setting.id }}</td>
-        <td>{{ setting.name }}</td>
+        <td>{{ setting.applicationName }}</td>
       </tr>
       </tbody>
     </table>
