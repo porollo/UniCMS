@@ -10,7 +10,7 @@ import java.sql.SQLException;
 @Component
 public class DatabaseCheck {
 
-    public String DatabaseInUse ="";
+    public String DatabaseInUse = "";
 
     @PersistenceContext
     EntityManager entityManager;
