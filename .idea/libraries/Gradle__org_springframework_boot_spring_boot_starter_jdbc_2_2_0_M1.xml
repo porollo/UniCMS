@@ -2,7 +2,6 @@
   <library name="Gradle: org.springframework.boot:spring-boot-starter-jdbc:2.2.0.M1">
     <CLASSES>
       <root url="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-jdbc/2.2.0.M1/spring-boot-starter-jdbc-2.2.0.M1.jar!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-jdbc/2.2.0.M1/eacd2a69fe75856c4874f5047abed840c9f9e73f/spring-boot-starter-jdbc-2.2.0.M1.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

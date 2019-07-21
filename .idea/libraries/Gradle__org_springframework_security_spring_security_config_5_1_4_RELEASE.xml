@@ -2,7 +2,6 @@
   <library name="Gradle: org.springframework.security:spring-security-config:5.1.4.RELEASE">
     <CLASSES>
       <root url="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-config/5.1.4.RELEASE/spring-security-config-5.1.4.RELEASE.jar!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-config/5.1.4.RELEASE/91c92c36df49cedfd5ba139c038c17c506190266/spring-security-config-5.1.4.RELEASE.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

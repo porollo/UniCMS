@@ -2,7 +2,6 @@
   <library name="Gradle: org.springframework.restdocs:spring-restdocs-core:2.0.3.RELEASE">
     <CLASSES>
       <root url="jar://$MAVEN_REPOSITORY$/org/springframework/restdocs/spring-restdocs-core/2.0.3.RELEASE/spring-restdocs-core-2.0.3.RELEASE.jar!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.restdocs/spring-restdocs-core/2.0.3.RELEASE/481618dd704175a7e60e21deff9339db5801bf5e/spring-restdocs-core-2.0.3.RELEASE.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

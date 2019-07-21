@@ -2,7 +2,6 @@
   <library name="Gradle: org.springframework:spring-aspects:5.1.5.RELEASE">
     <CLASSES>
       <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aspects/5.1.5.RELEASE/spring-aspects-5.1.5.RELEASE.jar!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aspects/5.1.5.RELEASE/3bb95e05b646ef93e2a4cf0b600924c2979fc723/spring-aspects-5.1.5.RELEASE.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

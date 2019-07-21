@@ -2,7 +2,6 @@
   <library name="Gradle: org.springframework.batch:spring-batch-test:4.1.1.RELEASE">
     <CLASSES>
       <root url="jar://$MAVEN_REPOSITORY$/org/springframework/batch/spring-batch-test/4.1.1.RELEASE/spring-batch-test-4.1.1.RELEASE.jar!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.batch/spring-batch-test/4.1.1.RELEASE/3601d03fa65c86ef6b2affdc3a8a9a3e84d3c639/spring-batch-test-4.1.1.RELEASE.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

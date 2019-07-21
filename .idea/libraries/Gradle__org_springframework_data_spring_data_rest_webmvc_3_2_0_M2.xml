@@ -2,7 +2,6 @@
   <library name="Gradle: org.springframework.data:spring-data-rest-webmvc:3.2.0.M2">
     <CLASSES>
       <root url="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-rest-webmvc/3.2.0.M2/spring-data-rest-webmvc-3.2.0.M2.jar!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-rest-webmvc/3.2.0.M2/22865750b29792b1f62ef1fbdd41745e00ab19e1/spring-data-rest-webmvc-3.2.0.M2.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

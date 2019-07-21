@@ -2,7 +2,6 @@
   <library name="Gradle: org.springframework.boot:spring-boot-test:2.2.0.M1">
     <CLASSES>
       <root url="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-test/2.2.0.M1/spring-boot-test-2.2.0.M1.jar!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-test/2.2.0.M1/88d7f32c5c05ef1fba48dc27efdb518390d3799f/spring-boot-test-2.2.0.M1.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

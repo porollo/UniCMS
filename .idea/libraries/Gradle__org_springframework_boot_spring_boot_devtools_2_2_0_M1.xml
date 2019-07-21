@@ -2,7 +2,6 @@
   <library name="Gradle: org.springframework.boot:spring-boot-devtools:2.2.0.M1">
     <CLASSES>
       <root url="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-devtools/2.2.0.M1/spring-boot-devtools-2.2.0.M1.jar!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-devtools/2.2.0.M1/282be49f55e45cf06fa984ea107551b34f004018/spring-boot-devtools-2.2.0.M1.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

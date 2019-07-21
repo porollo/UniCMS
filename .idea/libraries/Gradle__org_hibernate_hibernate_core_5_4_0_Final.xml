@@ -2,7 +2,6 @@
   <library name="Gradle: org.hibernate:hibernate-core:5.4.0.Final">
     <CLASSES>
       <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/5.4.0.Final/hibernate-core-5.4.0.Final.jar!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.hibernate/hibernate-core/5.4.0.Final/70ec4c8742c53bc018610ec001bd90837d54ee2b/hibernate-core-5.4.0.Final.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

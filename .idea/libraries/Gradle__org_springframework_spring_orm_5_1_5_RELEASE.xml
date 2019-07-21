@@ -2,7 +2,6 @@
   <library name="Gradle: org.springframework:spring-orm:5.1.5.RELEASE">
     <CLASSES>
       <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-orm/5.1.5.RELEASE/spring-orm-5.1.5.RELEASE.jar!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-orm/5.1.5.RELEASE/2320c1442ad2d33c4bb0c289d0e48554c7c42ee7/spring-orm-5.1.5.RELEASE.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
