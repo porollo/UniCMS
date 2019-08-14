@@ -7,6 +7,7 @@ import com.unicms.core.repository.UserRepository;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 @CrossOrigin(origins = "http://localhost:4200")
@@ -22,6 +23,11 @@ public class ArticlesRESTController {
     @GetMapping("/articles")
     public List<Article> getArticles() {
         return (List<Article>) articleRepository.findAll();
+    }
+
+    @GetMapping("/articles/{id}")
+    public Optional<Article> getArticle(@PathVariable Long id) {
+        return articleRepository.findById(id);
     }
 
     @PostMapping("/articles")

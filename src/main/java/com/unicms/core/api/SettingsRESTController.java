@@ -5,6 +5,7 @@ import com.unicms.core.repository.SettingsRepository;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 @CrossOrigin(origins = "http://localhost:4200")
@@ -19,6 +20,11 @@ public class SettingsRESTController {
     @GetMapping("/settings")
     public List<Settings> getSettings() {
         return (List<Settings>) settingsRepository.findAll();
+    }
+
+    @GetMapping("/settings/{id}")
+    public Optional<Settings> getSetting(@PathVariable Long id) {
+        return settingsRepository.findById(id);
     }
 
     @PostMapping("/settings")

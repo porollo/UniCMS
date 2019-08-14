@@ -3,10 +3,10 @@ package com.unicms.core.api;
 import com.unicms.core.model.User;
 import com.unicms.core.repository.UserRepository;
 import org.springframework.web.bind.annotation.*;
-import reactor.core.publisher.Flux;
-import reactor.core.publisher.Mono;
+
 
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 @CrossOrigin(origins = "http://localhost:4200")
@@ -19,21 +19,21 @@ public class UsersRESTController {
         this.userRepository = userRepository;
     }
     
-/*    @GetMapping("/users")
+    @GetMapping("/users")
     public List<User> getUsers() {
         return (List<User>) userRepository.findAll();
-    }*/
-
-    @GetMapping("/users")
-    private Flux<User> getUsers() {
-        return userRepository.findAllUsers();
     }
 
+    @GetMapping("/users/{id}")
+    public Optional<User> getUser(@PathVariable Long id) {
+        return userRepository.findById(id);
+    }
 
     @PostMapping("/users")
     void addUser(@RequestBody User user) {
         userRepository.save(user);
     }
-    void deleteUser(@RequestBody User user) {userRepository.delete(user);}
+    void deleteUser(@RequestBody User user) {
+        userRepository.delete(user);}
 
 }
