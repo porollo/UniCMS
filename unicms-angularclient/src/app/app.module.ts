@@ -14,6 +14,9 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { SettingsListComponent } from './components/settings/settings-list/settings-list.component';
 import { SettingsFormComponent } from './components/settings/settings-form/settings-form.component';
 import {SettingsService} from "./services/settings/settings.service";
+import { InstallMainComponent } from './components/install/install-main.component';
+import { SelectBackendComponent } from './components/install/select-backend/select-backend.component';
+import { SelectDatabaseComponent } from './components/install/select-database/select-database.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +28,10 @@ import {SettingsService} from "./services/settings/settings.service";
     IndexComponent,
     SidebarComponent,
     SettingsListComponent,
-    SettingsFormComponent
+    SettingsFormComponent,
+    InstallMainComponent,
+    SelectBackendComponent,
+    SelectDatabaseComponent
   ],
   imports: [
     BrowserModule,
