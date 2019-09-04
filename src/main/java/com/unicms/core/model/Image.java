@@ -3,13 +3,14 @@ package com.unicms.core.model;
 import lombok.Data;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.Set;
 
 @Data
 @Entity
 @Table(name = "images")
 
-public class Image {
+public class Image implements Serializable {
 
     private @Id
     @GeneratedValue

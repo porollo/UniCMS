@@ -1,4 +1,6 @@
 package com.unicms.core.model;
 
-public class Install {
+import java.io.Serializable;
+
+public class Install implements Serializable {
 }

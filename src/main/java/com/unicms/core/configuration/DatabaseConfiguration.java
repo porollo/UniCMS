@@ -1,3 +1,4 @@
+/*
 package com.unicms.core.configuration;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,7 +17,7 @@ public class DatabaseConfiguration {
 
     @Bean
     @Primary
-    @ConfigurationProperties(prefix="spring.datasource")
+    @ConfigurationProperties(prefix="spring.datasource") //Fix DB Names
     public DataSource primaryDataSource() {
         return DataSourceBuilder.create().build();
     }
@@ -42,3 +43,4 @@ public class DatabaseConfiguration {
         return txm;
     }
 }
+*/

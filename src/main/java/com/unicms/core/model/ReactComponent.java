@@ -6,12 +6,13 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import java.io.Serializable;
 
 @Data
 @Entity
 @Table(name = "react_components")
 
-public class ReactComponent {
+public class ReactComponent implements Serializable {
 
     private @Id
     @GeneratedValue

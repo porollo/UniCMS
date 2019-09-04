@@ -26,6 +26,7 @@ dependencies {
     compile 'org.springframework.boot:spring-boot-starter-data-rest:2.2.0.M1'
     compile 'org.springframework.boot:spring-boot-starter-mail:2.2.0.M1'
     compile 'org.springframework.boot:spring-boot-starter-security:2.2.0.M1'
+    implementation 'org.springframework.boot:spring-boot-starter-cache'
     compile group: 'org.springframework.boot', name: 'spring-boot-starter-webflux', version: '2.1.6.RELEASE'
     compile group: 'org.springframework.boot', name: 'spring-boot-starter-thymeleaf', version: '2.1.4.RELEASE'
     compile 'org.springframework.boot:spring-boot-starter-validation:2.2.0.M1'

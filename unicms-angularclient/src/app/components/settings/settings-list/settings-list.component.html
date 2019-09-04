@@ -3,6 +3,7 @@
     <table class="table table-bordered table-striped">
       <thead class="thead-dark">
       <tr>
+        <th scope="col">ID</th>
         <th scope="col">Application Name</th>
         <th scope="col">Application Version</th>
         <th scope="col">Database Engine</th>
@@ -11,6 +12,7 @@
       </thead>
       <tbody>
       <tr *ngFor="let setting of settings">
+        <td>{{ setting.id }}</td>
         <td>{{ setting.applicationName }}</td>
         <td>{{ setting.applicationVersion }}</td>
         <td>{{ setting.dbName }}</td>

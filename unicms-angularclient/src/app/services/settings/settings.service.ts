@@ -9,7 +9,7 @@ export class SettingsService {
   private settingsUrl: string;
 
   constructor(private http: HttpClient) {
-    this.settingsUrl = 'http://localhost:8080/settings';
+    this.settingsUrl = 'http://localhost:9090/settings';
   }
 
   public findAll(): Observable<Settings[]> {
