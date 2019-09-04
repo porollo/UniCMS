@@ -1,4 +1,4 @@
-export class Article {
+export class Articles {
   id: number;
   articleTitle: string;
   articleContent: string;

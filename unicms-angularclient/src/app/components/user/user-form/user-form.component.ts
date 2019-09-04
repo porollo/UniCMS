@@ -23,4 +23,8 @@ export class UserFormComponent {
   gotoUserList() {
     this.router.navigate(['/users']);
   }
+
+  onDelete() {
+    this.userService.delete(this.user).subscribe((result => this.onDelete()));
+  }
 }
