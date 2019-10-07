@@ -7,11 +7,17 @@ import { AppComponent } from './app.component';
 import { UserListComponent } from './components/user/user-list/user-list.component';
 import { UserFormComponent } from './components/user/user-form/user-form.component';
 import { UserService } from './services/user/user.service';
-import { IndexComponent } from './components/index/index.component';
 import { SettingsListComponent } from './components/settings/settings-list/settings-list.component';
 import { SettingsFormComponent } from './components/settings/settings-form/settings-form.component';
 import {SettingsService} from "./services/settings/settings.service";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MainNavComponent } from './main-nav/main-nav.component';
+import { LayoutModule } from '@angular/cdk/layout';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatButtonModule } from '@angular/material/button';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatIconModule } from '@angular/material/icon';
+import { MatListModule } from '@angular/material/list';
 
 
 @NgModule({
@@ -19,16 +25,22 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AppComponent,
     UserListComponent,
     UserFormComponent,
-    IndexComponent,
     SettingsListComponent,
     SettingsFormComponent,
+    MainNavComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    LayoutModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatSidenavModule,
+    MatIconModule,
+    MatListModule
   ],
   providers: [
     UserService,

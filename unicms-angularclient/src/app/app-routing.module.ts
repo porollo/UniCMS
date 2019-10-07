@@ -4,7 +4,6 @@ import { UserListComponent } from './components/user/user-list/user-list.compone
 import { UserFormComponent } from './components/user/user-form/user-form.component';
 import {SettingsFormComponent} from "./components/settings/settings-form/settings-form.component";
 import {SettingsListComponent} from "./components/settings/settings-list/settings-list.component";
-import {IndexComponent} from "./components/index/index.component";
 
 const routes: Routes = [
   { path: 'users', component: UserListComponent },
