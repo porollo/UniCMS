@@ -5,11 +5,8 @@ import { UserFormComponent } from './components/user/user-form/user-form.compone
 import {SettingsFormComponent} from "./components/settings/settings-form/settings-form.component";
 import {SettingsListComponent} from "./components/settings/settings-list/settings-list.component";
 import {IndexComponent} from "./components/index/index.component";
-import {InstallMainComponent} from "./components/install/install-main.component";
 
 const routes: Routes = [
-  { path: '', component: IndexComponent },
-  { path: 'install', component: InstallMainComponent },
   { path: 'users', component: UserListComponent },
   { path: 'adduser', component: UserFormComponent },
   { path: 'deleteuser', component: UserFormComponent },
