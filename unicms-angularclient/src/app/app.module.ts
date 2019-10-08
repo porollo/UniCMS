@@ -11,7 +11,7 @@ import { SettingsListComponent } from './components/settings/settings-list/setti
 import { SettingsFormComponent } from './components/settings/settings-form/settings-form.component';
 import {SettingsService} from "./services/settings/settings.service";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MainNavComponent } from './main-nav/main-nav.component';
+import { MainNavComponent } from './components/main-nav/main-nav.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
