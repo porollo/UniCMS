@@ -18,7 +18,18 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { RouterModule, Routes } from '@angular/router';
 
+const appRoutes: Routes = [
+  { path: 'users', component: UserListComponent },
+  { path: 'settings', component: SettingsListComponent },
+  {
+    path: 'dashboard',
+    component: DashboardComponent,
+    data: { title: 'Dashboard' }
+  },
+];
 
 @NgModule({
   declarations: [
@@ -28,8 +39,13 @@ import { MatListModule } from '@angular/material/list';
     SettingsListComponent,
     SettingsFormComponent,
     MainNavComponent,
+    DashboardComponent,
   ],
   imports: [
+    RouterModule.forRoot(
+      appRoutes,
+      { enableTracing: true }  // <-- debugging purposes only
+    ),
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
