@@ -20,10 +20,14 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { RouterModule, Routes } from '@angular/router';
+import { CommentsListComponent } from './components/comments/comments-list/comments-list.component';
+import { ArticlesListComponent } from './components/articles/articles-list/articles-list.component';
 
 const appRoutes: Routes = [
   { path: 'users', component: UserListComponent },
   { path: 'settings', component: SettingsListComponent },
+  { path: 'articles', component: ArticlesListComponent },
+  { path: 'comments', component: CommentsListComponent },
   {
     path: 'dashboard',
     component: DashboardComponent,
@@ -40,6 +44,8 @@ const appRoutes: Routes = [
     SettingsFormComponent,
     MainNavComponent,
     DashboardComponent,
+    CommentsListComponent,
+    ArticlesListComponent,
   ],
   imports: [
     RouterModule.forRoot(

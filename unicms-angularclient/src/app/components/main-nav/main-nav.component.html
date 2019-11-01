@@ -11,8 +11,8 @@
     <mat-nav-list>
       <a mat-list-item routerLink="/users" routerLinkActive="active">Users</a>
       <a mat-list-item routerLink="/settings" routerLinkActive="active">Settings</a>
-      <a mat-list-item href="/articles">Articles</a>
-      <a mat-list-item href="/comments">Comments</a>
+      <a mat-list-item routerLink="/articles" routerLinkActive="active">Articles</a>
+      <a mat-list-item routerLink="/comments" routerLinkActive="active">Comments</a>
     </mat-nav-list>
     <router-outlet></router-outlet>
   </mat-sidenav>
@@ -30,9 +30,8 @@
       <span class="spacer"></span>
       <a routerLink="/users" routerLinkActive="active">Users</a>
       <a routerLink="/settings" routerLinkActive="active">Settings</a>
-
-      <a href="/articles">Articles</a>
-      <a href="/comments">Comments</a>
+      <a routerLink="/articles" routerLinkActive="active">Articles</a>
+      <a routerLink="/comments" routerLinkActive="active">Comments</a>
     </mat-toolbar>
     <router-outlet></router-outlet>
 

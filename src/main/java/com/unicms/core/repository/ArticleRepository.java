@@ -6,5 +6,4 @@ import org.springframework.stereotype.Repository;
 
 @Repository("articleRepository")
 public interface ArticleRepository extends CrudRepository<Article, Long> {
-    Article findById(int id);
 }

@@ -6,6 +6,8 @@
         <th scope="col">Email</th>
         <th scope="col">Roles</th>
         <th scope="col">Actions</th>
+        <th scope="col">Enabled</th>
+
       </tr>
       </thead>
       <tbody>
@@ -25,6 +27,12 @@
           <button mat-raised-button color="basic" a routerLink="/user_edit">Edit</button>
           <button mat-raised-button color="warn" a routerLink="/user_delete">Delete</button>
         </div>
+
+        <td>
+        {{ user.enable }}
+        </td>
+
+
       </tr>
       </tbody>
     </table>
