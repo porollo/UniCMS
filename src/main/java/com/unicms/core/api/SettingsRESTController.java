@@ -11,24 +11,4 @@ import java.util.Optional;
 @CrossOrigin(origins = "http://localhost:4200")
 public class SettingsRESTController {
 
-    private final SettingsRepository settingsRepository;
-
-    public SettingsRESTController(SettingsRepository settingsRepository) {
-        this.settingsRepository = settingsRepository;
-    }
-
-    @GetMapping("/settings")
-    public List<Settings> getSettings() {
-        return (List<Settings>) settingsRepository.findAll();
-    }
-
-    @GetMapping("/settings/{id}")
-    public Optional<Settings> getSetting(@PathVariable Long id) {
-        return settingsRepository.findById(id);
-    }
-
-    @PostMapping("/settings")
-    void addSettings(@RequestBody Settings settings) {
-        settingsRepository.save(settings);
-    }
 }

@@ -4,8 +4,6 @@
       <root url="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/2.2.0.M1/spring-boot-2.2.0.M1.jar!/" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot/2.2.0.M1/9ba6ded5d8b6072a2826652ce8a7b739752636ff/spring-boot-2.2.0.M1-sources.jar!/" />
-    </SOURCES>
+    <SOURCES />
   </library>
 </component>

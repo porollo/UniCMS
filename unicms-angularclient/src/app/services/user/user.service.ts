@@ -16,15 +16,21 @@ export class UserService {
     return this.http.get<User[]>(this.usersUrl);
   }
 
-  public save(user: User) {
-    return this.http.post<User>(this.usersUrl, user);
+  get(id: string) {
+    return this.http.get(this.usersUrl + '/' + id);
   }
 
-  public edit(user: User) {
-    return this.http.post<User>(this.usersUrl, user);
+  save(user: any): Observable<any> {
+    let result: Observable<Object>;
+    if (user['href']) {
+      result = this.http.put(user.href, user);
+    } else {
+      result = this.http.post(this.usersUrl, user);
+    }
+    return result;
   }
 
-  public delete(user: User) {
-    return this.http.post<User>(this.usersUrl, user);
+  public delete(href: string) {
+    return this.http.delete(href);
   }
 }

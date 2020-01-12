@@ -3,7 +3,11 @@
       <thead class="thead-white">
       <tr>
         <th scope="col">Username</th>
+        <th scope="col">Full Name</th>
+
         <th scope="col">Email</th>
+        <th scope="col">Password</th>
+
         <th scope="col">Roles</th>
         <th scope="col">Actions</th>
         <th scope="col">Enabled</th>
@@ -12,10 +16,18 @@
       </thead>
       <tbody>
       <tr *ngFor="let user of users">
-        <td>{{ user.username }}</td>
-        <td><a href="mailto:{{ user.email }}">{{ user.email }}</a></td>
-        <td>
 
+        <td>{{ user.username }}</td>
+        <td>Dmitriy S. Porollo</td>
+
+
+
+        <td><a href="mailto:{{ user.email }}">{{ user.email }}</a></td>
+
+        <td>123456</td>
+
+
+        <td>
           <div class="buttons_roles">
             <button mat-raised-button color="basic" a routerLink="/change_role_user">User</button>
             <button mat-raised-button color="accent" a routerLink="/change_role_admin">Admin</button>
@@ -24,15 +36,14 @@
 
         <td>
         <div class="buttons_actions">
-          <button mat-raised-button color="basic" a routerLink="/user_edit">Edit</button>
-          <button mat-raised-button color="warn" a routerLink="/user_delete">Delete</button>
+          <button mat-raised-button color="basic" a routerLink="['/user-details', user.id]">Details</button>
+          <button mat-raised-button color="basic" a routerLink="['/user-edit', user.id]">Edit</button>
+          <button mat-raised-button color="warn" a routerLink="['/user-delete', user.id]">Delete</button>
         </div>
 
         <td>
         <b>{{ user.enable }}</b>
         </td>
-
-
       </tr>
       </tbody>
     </table>

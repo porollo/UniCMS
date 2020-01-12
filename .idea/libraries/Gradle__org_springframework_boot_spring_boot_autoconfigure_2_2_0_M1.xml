@@ -4,8 +4,6 @@
       <root url="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.2.0.M1/spring-boot-autoconfigure-2.2.0.M1.jar!/" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-autoconfigure/2.2.0.M1/f4ae962185feca1a8c6858d6a6f2d901486a4253/spring-boot-autoconfigure-2.2.0.M1-sources.jar!/" />
-    </SOURCES>
+    <SOURCES />
   </library>
 </component>
