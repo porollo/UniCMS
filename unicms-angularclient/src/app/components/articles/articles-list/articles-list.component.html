@@ -1,1 +1,35 @@
-<p>articles-list works!</p>
+<div class="card-body">
+  <table mat-table class="table table-bordered">
+    <thead class="thead-white">
+    <tr>
+      <th scope="col">Title</th>
+      <th scope="col">Content</th>
+      <th scope="col">Owner</th>
+      <th scope="col">Visible</th>
+      <th scope="col">Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let article of articles">
+
+      <td>{{ article.title }}</td>
+      <td>{{ article.content }}</td>
+
+      <td><a href="mailto:{{ article.owner }}">{{ article.owner }}</a></td>///FIX
+
+      <td>
+        <b>{{ article.enable }}</b>///FIX
+      </td>
+
+      <td>
+        <div class="buttons_actions">
+          <button mat-raised-button color="basic" a routerLink="['/article-details', article.id]">Details</button>
+          <button mat-raised-button color="basic" a routerLink="['/article-edit', article.id]">Edit</button>
+          <button mat-raised-button color="warn" a routerLink="['/article-delete', article.id]">Delete</button>
+        </div>
+    </tr>
+    </tbody>
+  </table>
+  <button mat-raised-button color="primary" a routerLink="/article_add">New Article</button>
+</div>
+

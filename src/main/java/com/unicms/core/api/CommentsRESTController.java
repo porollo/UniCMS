@@ -16,7 +16,7 @@ public class CommentsRESTController {
 
     private final CommentRepository commentRepository;
 
-    private CommentsRESTController(CommentRepository commentRepository) {
+    public CommentsRESTController(CommentRepository commentRepository) {
         this.commentRepository = commentRepository;
     }
 
@@ -34,5 +34,7 @@ public class CommentsRESTController {
     void addComment(@RequestBody Comment comment) {
         commentRepository.save(comment);
     }
-    void deleteComment(@RequestBody Comment comment) {commentRepository.delete(comment);}
+
+    @DeleteMapping("/comments/{id}")
+    void deleteComment(@RequestBody Comment comment) { commentRepository.delete(comment);}
 }

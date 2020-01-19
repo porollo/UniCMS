@@ -34,5 +34,8 @@ public class ArticlesRESTController {
     void addArticle(@RequestBody Article article) {
         articleRepository.save(article);
     }
-    void deleteArticle(@RequestBody Article article) {articleRepository.delete(article);}
+
+    @DeleteMapping("/articles")
+    public void deleteArticle(@RequestBody Article article) {
+        articleRepository.delete(article);}
 }
