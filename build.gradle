@@ -33,9 +33,7 @@ dependencies {
     compile 'org.springframework.boot:spring-boot-starter-web:2.2.0.M1'
     compile 'org.springframework.data:spring-data-rest-hal-browser:3.2.0.M2'
     compile 'org.springframework.session:spring-session-core:2.1.4.RELEASE'
-    compile group: 'org.springframework.boot', name: 'spring-boot-starter-data-redis', version: '2.1.6.RELEASE'
-    compile group: 'org.springframework.session', name: 'spring-session-data-redis', version: '2.1.7.RELEASE'
-    compile group: 'redis.clients', name: 'jedis', version: '3.1.0-m4'
+    compile group: 'org.springframework.session', name: 'spring-session-jdbc', version: '2.2.0.RELEASE'
     compile 'org.projectlombok:lombok:1.18.6'
     runtime 'org.springframework.boot:spring-boot-devtools:2.2.0.M1'
     runtime 'com.microsoft.sqlserver:mssql-jdbc:6.4.0.jre8'
@@ -45,9 +43,7 @@ dependencies {
     testCompile 'org.springframework.restdocs:spring-restdocs-mockmvc:2.0.3.RELEASE'
     testCompile 'org.springframework.security:spring-security-test:5.1.4.RELEASE'
     compile group: 'net.sourceforge.jtds', name: 'jtds', version: '1.3.1'
-    // https://mvnrepository.com/artifact/org.springdoc/springdoc-openapi-core
     compile group: 'org.springdoc', name: 'springdoc-openapi-core', version: '1.1.49'
-    // https://mvnrepository.com/artifact/org.springdoc/springdoc-openapi-ui
     compile group: 'org.springdoc', name: 'springdoc-openapi-ui', version: '1.1.49'
 
 
