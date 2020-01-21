@@ -20,7 +20,7 @@ public class Image implements Serializable {
     private byte[] pic;
     private String recordCreated;
 
-    private Image() {};
+    public Image() {};
 
     public Image (String name, String type, byte[] pic) {
         this.name = name;

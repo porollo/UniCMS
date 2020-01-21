@@ -22,7 +22,7 @@ public class Settings implements Serializable {
     private String dbName;
     private String viewEngine;
 
-    private Settings() {}
+    public Settings() {}
 
     public Settings(String applicationName, String applicationVersion, String dbName, String viewEngine) {
         this.applicationName = applicationName;

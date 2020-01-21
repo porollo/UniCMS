@@ -21,7 +21,7 @@ public class Article implements Serializable {
     private String articleContent;
     private String articleOwner;
 
-    private Article() {}
+    public Article() {}
 
     public Article(String articleTitle, String articleContent, String articleOwner) {
         this.articleTitle = articleTitle;

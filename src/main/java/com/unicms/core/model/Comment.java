@@ -21,7 +21,7 @@ public class Comment implements Serializable {
     private String commentContent;
     private String commentOwner;
 
-    private Comment() {}
+    public Comment() {}
 
     public Comment(String commentTitle, String commentContent, String commentOwner) {
         this.commentTitle = commentTitle;
