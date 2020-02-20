@@ -1,9 +1,7 @@
 package com.unicms.core.api;
 
 import com.unicms.core.model.Article;
-import com.unicms.core.model.User;
 import com.unicms.core.repository.ArticleRepository;
-import com.unicms.core.repository.UserRepository;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
