@@ -8,6 +8,8 @@ import {ArticlesListComponent} from "./components/articles/articles-list/article
 
 const routes: Routes = [
 
+  { path: '/', component: IndexPageComponent },
+
   { path: 'users', component: UserListComponent },
   { path: 'user-add', component: UserEditComponent},
   { path: 'user-edit/:id', component: UserEditComponent},

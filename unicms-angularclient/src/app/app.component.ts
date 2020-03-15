@@ -8,9 +8,7 @@ import { Component } from '@angular/core';
 
 export class AppComponent {
 
-  title: string;
+  title = 'Login';
+  greeting = {'id': 'XXX', 'content': 'Hello World'};
 
-  constructor() {
-    this.title = 'UniCMS Angular Client';
-  }
 }

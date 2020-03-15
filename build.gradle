@@ -5,6 +5,8 @@ plugins {
 
 repositories {
     mavenLocal()
+    mavenCentral()
+    jcenter()
     maven {
         url = 'https://repo.spring.io/snapshot'
     }
@@ -45,23 +47,23 @@ dependencies {
     compile group: 'net.sourceforge.jtds', name: 'jtds', version: '1.3.1'
     compile group: 'org.springdoc', name: 'springdoc-openapi-core', version: '1.1.49'
     compile group: 'org.springdoc', name: 'springdoc-openapi-ui', version: '1.1.49'
-
+    compile group: 'org.springframework.security', name: 'spring-security-jwt', version: '1.1.0.RELEASE'
+    implementation 'org.bouncycastle:bcprov-jdk15on:1.64'
 
 }
+    group = 'com.unicms'
+    version = '0.1.0-SNAPSHOT'
+    description = 'UniCMS-Core'
+    sourceCompatibility = '1.8'
 
-group = 'com.unicms'
-version = '0.1.0-SNAPSHOT'
-description = 'UniCMS-Core'
-sourceCompatibility = '1.8'
-
-publishing {
-    publications {
-        maven(MavenPublication) {
-            from(components.java)
+    publishing {
+        publications {
+            maven(MavenPublication) {
+                from(components.java)
+            }
         }
     }
-}
 
-tasks.withType(JavaCompile) {
-    options.encoding = 'UTF-8'
-}
+    tasks.withType(JavaCompile) {
+        options.encoding = 'UTF-8'
+    }

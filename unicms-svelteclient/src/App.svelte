@@ -3,51 +3,9 @@
 </svelte:head>
 
 <script>
-  import {
-    Collapse,
-    Navbar,
-    NavbarToggler,
-    NavbarBrand,
-    Nav,
-    NavItem,
-    NavLink
-  } from 'sveltestrap';
-
-  let isOpen = false;
-
-  function handleUpdate(event) {
-    isOpen = event.detail.isOpen;
-  }
+  import NavBar from "./components/NavBar.svelte";
 </script>
 
-<Navbar color="dark" dark expand="md">
-  <NavbarBrand href="/">UniCMS</NavbarBrand>
-  <NavbarToggler on:click={() => (isOpen = !isOpen)} />
-
-
-    <Nav class="ml-auto" navbar>
-      <NavItem>
-        <NavLink href="/products">Products</NavLink>
-      </NavItem>
-
-      <NavItem>
-        <NavLink href="/about">About</NavLink>
-      </NavItem>
-
-      <NavItem>
-        <NavLink href="/contacts">Contacts</NavLink>
-      </NavItem>
-
-      <NavItem>
-        <NavLink href="/register">Register</NavLink>
-      </NavItem>
-
-      <NavItem>
-        <NavLink href="/login">Login</NavLink>
-      </NavItem>
-
-    </Nav>
-
-</Navbar>
+<NavBar/>
 
 

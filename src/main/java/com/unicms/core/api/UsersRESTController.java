@@ -1,7 +1,9 @@
 package com.unicms.core.api;
 
+import com.unicms.core.model.Article;
 import com.unicms.core.model.User;
 import com.unicms.core.repository.UserRepository;
+import com.unicms.core.service.UserService;
 import org.springframework.web.bind.annotation.*;
 
 
@@ -9,31 +11,25 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
+@RequestMapping("/user")
 @CrossOrigin(origins = "http://localhost:4200")
 
 public class UsersRESTController {
 
-    private final UserRepository userRepository;
+    private final UserService userService;
 
-    public UsersRESTController(UserRepository userRepository) {
-        this.userRepository = userRepository;
-    }
-    
-    @GetMapping("/users")
-    public List<User> getUsers() {
-        return (List<User>) userRepository.findAll();
+    public UsersRESTController(UserService userService) {
+        this.userService = userService;
     }
 
-    @GetMapping("/users/{id}")
-    public Optional<User> getUser(@PathVariable Long id) {
-        return userRepository.findById(id);
+
+    @PostMapping(value = "/save")
+    public @ResponseBody User createUser(@RequestBody User user) {
+        return userService.saveUser(user);
     }
 
-    @PostMapping("/users")
-    void addUser(@RequestBody User user) {
-        userRepository.save(user);
-    }
+    @DeleteMapping("/delete")
+    public void deleteUser(@RequestBody Long id) {
+        userService.delete(id);}
 
-    @DeleteMapping("/users/{id}")
-    void deleteUser(@RequestBody User user) { userRepository.delete(user);}
 }

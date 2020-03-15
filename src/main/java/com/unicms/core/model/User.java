@@ -14,7 +14,7 @@ public class User implements Serializable {
 
     private @Id
     @GeneratedValue
-    Long user_id;
+    Long id;
     private String email;
     private String username;
     private String password;
@@ -37,4 +37,5 @@ public class User implements Serializable {
     @ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     @JoinTable(name = "roles", joinColumns = @JoinColumn(name = "user_id"), inverseJoinColumns = @JoinColumn(name = "role_id"))
     private Set<Roles> roles;
+
 }
