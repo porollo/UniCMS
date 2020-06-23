@@ -15,7 +15,6 @@ public class CacheConfig {
 
     @Bean
     public CacheManager cacheManager() {
-        // configure and return an implementation of Spring's CacheManager SPI
         SimpleCacheManager cacheManager = new SimpleCacheManager();
         cacheManager.setCaches(Arrays.asList(new ConcurrentMapCache("default")));
         return cacheManager;
