@@ -34,7 +34,8 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
         this.dataSource = dataSource;
     }
 
-/*    @Override
+/*
+    @Override
     protected void configure(AuthenticationManagerBuilder auth)
             throws Exception {
         auth.
@@ -43,7 +44,8 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
                 .authoritiesByUsernameQuery(rolesQuery)
                 .dataSource(dataSource)
                 .passwordEncoder(bCryptPasswordEncoder);
-    }*/
+    }
+*/
 
     @Override
     protected void configure(final AuthenticationManagerBuilder auth) throws Exception {
