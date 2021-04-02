@@ -1,47 +1,41 @@
 package com.unicms.core.api;
 
-import com.unicms.core.model.Article;
 import com.unicms.core.model.User;
-import com.unicms.core.service.UserService;
+import com.unicms.core.model.Video;
+import com.unicms.core.repository.UserRepository;
+import com.unicms.core.repository.VideoRepository;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("/user")
 @CrossOrigin(origins = "http://localhost:4200")
 
 public class UsersRESTController {
 
-    private final UserService userService;
+    private final UserRepository userRepository;
 
-    public UsersRESTController(UserService userService) {
-        this.userService = userService;
+    public UsersRESTController(UserRepository userRepository) {
+        this.userRepository = userRepository;
     }
 
     @GetMapping("/users")
-    public List<User> findAllUsers() {
-        return (List<User>) userService.findAllUsers();
+    public List<User> getUsers() {
+        return (List<User>) userRepository.findAll();
+    } // Pass
+
+    @GetMapping("/users/{id}")
+    public Optional<User> getUsers(@PathVariable Long id) {
+        return userRepository.findById(id);
+    } //Pass
+
+    @PostMapping("/users")
+    void addUser(@RequestBody User user) {
+        userRepository.save(user);
     }
 
-    @GetMapping("/count")
-    public Long countUsers() {
-        return userService.countUsers();
-    }
-
-    @GetMapping("/{id}")
-    public Optional<User> getUser(@PathVariable Long id) {
-        return userService.findUserById(id);
-    }
-
-    @PostMapping(value = "/save")
-    public @ResponseBody User createUser(@RequestBody User user) {
-        return userService.saveUser(user);
-    }
-
-    @DeleteMapping("/delete") //FIX
-    public void deleteUser(@RequestBody Long id) {
-        userService.deleteUser(id);}
-
+    @DeleteMapping("/users")
+    public void deleteUser(@RequestBody User user) {
+        userRepository.delete(user);}
 }

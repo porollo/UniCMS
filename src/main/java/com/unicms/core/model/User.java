@@ -1,10 +1,11 @@
 package com.unicms.core.model;
 
 import lombok.Data;
-
-import javax.persistence.*;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
 import java.io.Serializable;
-import java.util.Set;
 
 @Data
 @Entity
@@ -15,27 +16,25 @@ public class User implements Serializable {
     private @Id
     @GeneratedValue
     Long id;
-    private String email;
     private String username;
-    private String password;
-    private boolean enable;
-    private String recordCreated;
+    private String firstName;
+    private String patronymic;
+    private String surname;
+    private Boolean active;
 
-    private User() {};
-
-    public User (String email, String username, String password, boolean enable, String recordCreated) {
-        this.email = email;
-        this.username = username;
-        this.password = password;
-        this.enable = enable;
-        this.recordCreated = recordCreated;
+    public User(long l, String format, Long id) {
+        this.id = id;
     }
 
-    @OneToOne(mappedBy = "user", cascade = CascadeType.ALL)
-    private UserDetails userDetails;
+    public User(String username, String firstName, String patronymic, String surname, Boolean active) {
+        this.username = username;
+        this.firstName = firstName;
+        this.patronymic = patronymic;
+        this.surname = surname;
+        this.active = active;
+    }
 
-    @ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
-    @JoinTable(name = "roles", joinColumns = @JoinColumn(name = "user_id"), inverseJoinColumns = @JoinColumn(name = "role_id"))
-    private Set<Roles> roles;
+    public User() {
 
+    }
 }

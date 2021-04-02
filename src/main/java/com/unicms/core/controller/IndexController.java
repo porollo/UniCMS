@@ -1,30 +1,21 @@
-package com.unicms.core.controller;
+/*package com.unicms.core.controller;
 
-import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
+import java.util.concurrent.atomic.AtomicLong;
+
+import com.unicms.core.model.User;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.servlet.ModelAndView;
+import org.springframework.web.bind.annotation.RestController;
 
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-
-@Controller
+@RestController
 public class IndexController {
 
-        @GetMapping("/")
-        public ModelAndView greeting(@RequestParam(name="name", required=false, defaultValue="World") String name, Model model) {
-            model.addAttribute("name", name);
+    private static final String template = "Hello, %s!";
+    private final AtomicLong counter = new AtomicLong();
 
-            Path path = Paths.get("/unicms.lock");
-
-            if (Files.exists(path)) {
-                return new ModelAndView("main");
-            }
-            else {
-                return new ModelAndView("install");
-            }
-        }
+    @RequestMapping("/")
+    public User user(@RequestParam(value="name", required=false, defaultValue="World") String name) {
+        return new User(counter.incrementAndGet(),
+                String.format(template, name));
     }
-
+}*/
